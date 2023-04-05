@@ -6,6 +6,8 @@
 
 body{
     background: linear-gradient(135deg, rgb(0,133,255) 0%, rgb(75, 255, 175) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
@@ -23,7 +25,7 @@ form{
     display: none;
 }
 
-#personal:invalid  a{
+#personal:invalid a{
     background-color: grey;
     pointer-events: none;
     opacity: 30%;
@@ -35,6 +37,7 @@ form:first-of-type{
 
 fieldset{
     margin: 5em;
+    border: none;
 }
 
 form#personal:target {
@@ -68,6 +71,7 @@ legend{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: rgb(0, 43, 103);
+    font-weight: bold;
 }
 
 h1{
@@ -76,6 +80,13 @@ h1{
     text-align: center;
     font-size: 3em;
     color: rgb(0, 43, 103);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: rgb(0, 43, 103);
+    font-weight: lighter;
 } 
 
 p{
@@ -84,6 +95,19 @@ p{
     display: block;
     margin-top: 2em;
     margin-left: 5%;
+}
+
+.submitted{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 2em;
+}
+
+img{
+    width: 50%;
+    display: block;
+    margin: 5em auto;
 }
 
 ul li{
@@ -210,6 +234,10 @@ input[type=submit]{
     margin-bottom: 3em;
 }
 
+input[type=submit]:hover{
+    background-color: rgb(0, 100, 193);
+}
+
 @media (prefers-color-scheme: dark) {
     body{
         background: rgb(37, 37, 37);
@@ -220,6 +248,10 @@ input[type=submit]{
     }
 
     h1{
+        color: white;
+    }
+
+    h2{
         color: white;
     }
 
