@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Enquête Minor Web Design & Development</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <main>
+      <form id="personal">
+        <h1>Enquête Minor Web Design & Development</h1>
+          <fieldset>
+            <legend>Personal information</legend>
+            <ul>
+              <li>
+                <!-- <label for="name">Name:</label> -->
+                <input type="text" id="name" name="name" placeholder="Name*" required>
+              </li>
+              <li> 
+                <!-- <label for="studentnumber">Studentnumber:</label> -->
+                <input type="text" id="studentnumber" name="studentnumber" placeholder="Studentnumber*" pattern="500[0-9]{6}" required>
+              </li>
+              <li> 
+                <!-- <label for="email">Email:</label> -->
+                <input type="email" id="email" name="email" placeholder="Email*" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div>
+            <a href="#wafs">Volgende</a>
+          </div>
+        </form>
+
+          <form id="wafs">
+          <fieldset>
+            <legend>Web App from Scratch</legend>
+            <p>Welke docenten had je voor dit vak?</p>
+            <ul>
+              <li>
+                <input type="checkbox" id="Declan" name="Declan" value="Declan">
+                <label for="Declan">Declan Rek</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Guido" name="Guido" value="Guido">
+                <label for="Guido">Guido Bouwman</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Janno" name="Janno" value="Janno">
+                <label for="Janno">Janno Kapritsias</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Joost" name="Joost" value="Joost">
+                <label for="Joost">Joost Faber</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Justus" name="Justus" value="Justus">
+                <label for="Justus">Justus Sturkenboom</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Koop" name="Koop" value="Koop">
+                <label for="Koop">Koop Reynders</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Peter" name="Peter" value="Peter">
+                <label for="Peter">Peter Paul Koch</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Robert" name="Robert" value="Robert">
+                <label for="Robert">Robert Spier</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Sanne" name="Sanne" value="Sanne">
+                <label for="Sanne">Sanne t Hooft</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Suus" name="Suus" value="Suus">
+                <label for="Suus">Suus ten Voorde</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Vasilis" name="Vasilis" value="Vasilis">
+                <label for="Vasilis">Vasilis van Gemert</label>
+              </li>
+            </ul>
+
+            <p>In welke week had je dit vak?</p>
+            <input type="text" id="week" name="week" value="Week 1 t/m week 3">
+            <p>Hoe moeilijk vond je de lesstof van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer" pattern="[0-9]">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe moeilijk vond je de uitleg van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+          </fieldset>
+
+          <div>
+            <a href="#personal">Vorige</a>
+            <a href="#cssttr">Volgende</a>
+          </div>
+        </form>
+
+        <form id="cssttr">
+          <fieldset>
+            <legend>CSS to the Rescue</legend>
+            <p>Welke docenten had je voor dit vak?</p>
+            <ul>
+              <li>
+                <input type="checkbox" id="Declan" name="Declan" value="Declan">
+                <label for="Declan">Declan Rek</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Guido" name="Guido" value="Guido">
+                <label for="Guido">Guido Bouwman</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Janno" name="Janno" value="Janno">
+                <label for="Janno">Janno Kapritsias</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Joost" name="Joost" value="Joost">
+                <label for="Joost">Joost Faber</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Justus" name="Justus" value="Justus">
+                <label for="Justus">Justus Sturkenboom</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Koop" name="Koop" value="Koop">
+                <label for="Koop">Koop Reynders</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Peter" name="Peter" value="Peter">
+                <label for="Peter">Peter Paul Koch</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Robert" name="Robert" value="Robert">
+                <label for="Robert">Robert Spier</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Sanne" name="Sanne" value="Sanne">
+                <label for="Sanne">Sanne t Hooft</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Suus" name="Suus" value="Suus">
+                <label for="Suus">Suus ten Voorde</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Vasilis" name="Vasilis" value="Vasilis">
+                <label for="Vasilis">Vasilis van Gemert</label>
+              </li>
+            </ul>
+
+            <p>In welke week had je dit vak?</p>
+            <input type="text" id="week" name="week" value="Week 1 t/m week 3">
+            <p>Hoe moeilijk vond je de lesstof van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe moeilijk vond je de uitleg van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+          </fieldset>
+
+          <div>
+            <a href="#wafs">Vorige</a>
+            <a href="#pwa">Volgende</a>
+          </div>
+        </form>
+
+        <form id="pwa">
+          <fieldset>
+            <legend>Progressive Web Apps</legend>
+            <p>Welke docenten had je voor dit vak?</p>
+            <ul>
+              <li>
+                <input type="checkbox" id="Declan" name="Declan" value="Declan">
+                <label for="Declan">Declan Rek</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Guido" name="Guido" value="Guido">
+                <label for="Guido">Guido Bouwman</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Janno" name="Janno" value="Janno">
+                <label for="Janno">Janno Kapritsias</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Joost" name="Joost" value="Joost">
+                <label for="Joost">Joost Faber</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Justus" name="Justus" value="Justus">
+                <label for="Justus">Justus Sturkenboom</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Koop" name="Koop" value="Koop">
+                <label for="Koop">Koop Reynders</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Peter" name="Peter" value="Peter">
+                <label for="Peter">Peter Paul Koch</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Robert" name="Robert" value="Robert">
+                <label for="Robert">Robert Spier</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Sanne" name="Sanne" value="Sanne">
+                <label for="Sanne">Sanne t Hooft</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Suus" name="Suus" value="Suus">
+                <label for="Suus">Suus ten Voorde</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Vasilis" name="Vasilis" value="Vasilis">
+                <label for="Vasilis">Vasilis van Gemert</label>
+              </li>
+            </ul>
+
+            <p>In welke week had je dit vak?</p>
+            <input type="text" id="week" name="week" value="Week 5 t/m week 8">
+            <p>Hoe moeilijk vond je de lesstof van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe moeilijk vond je de uitleg van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+          </fieldset>
+          <div>
+            <a href="#cssttr">Vorige</a>
+            <a href="#bt">Volgende</a>
+          </div>
+        </form>
+
+      <form id="bt">
+          <fieldset>
+            <legend>Browser Technologies
+            </legend>
+            <p>Welke docenten had je voor dit vak?</p>
+            <ul>
+              <li>
+                <input type="checkbox" id="Declan" name="Declan" value="Declan">
+                <label for="Declan">Declan Rek</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Guido" name="Guido" value="Guido">
+                <label for="Guido">Guido Bouwman</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Janno" name="Janno" value="Janno">
+                <label for="Janno">Janno Kapritsias</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Joost" name="Joost" value="Joost">
+                <label for="Joost">Joost Faber</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Justus" name="Justus" value="Justus">
+                <label for="Justus">Justus Sturkenboom</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Koop" name="Koop" value="Koop">
+                <label for="Koop">Koop Reynders</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Peter" name="Peter" value="Peter">
+                <label for="Peter">Peter Paul Koch</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Robert" name="Robert" value="Robert">
+                <label for="Robert">Robert Spier</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Sanne" name="Sanne" value="Sanne">
+                <label for="Sanne">Sanne t Hooft</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Suus" name="Suus" value="Suus">
+                <label for="Suus">Suus ten Voorde</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Vasilis" name="Vasilis" value="Vasilis">
+                <label for="Vasilis">Vasilis van Gemert</label>
+              </li>
+            </ul>
+
+            <p>In welke week had je dit vak?</p>
+            <input type="text" id="week" name="week" value="Week 5 t/m week 8">
+            <p>Hoe moeilijk vond je de lesstof van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe moeilijk vond je de uitleg van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+          </fieldset>
+          <div>
+            <a href="#pwa">Vorige</a>
+            <a href="#rtw">Volgende</a>
+          </div>
+        </form>
+
+      <form id="rtw">
+          <fieldset>
+            <legend>Real-time Web</legend>
+            <p>Welke docenten had je voor dit vak?</p>
+            <ul>
+              <li>
+                <input type="checkbox" id="Declan" name="Declan" value="Declan">
+                <label for="Declan">Declan Rek</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Guido" name="Guido" value="Guido">
+                <label for="Guido">Guido Bouwman</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Janno" name="Janno" value="Janno">
+                <label for="Janno">Janno Kapritsias</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Joost" name="Joost" value="Joost">
+                <label for="Joost">Joost Faber</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Justus" name="Justus" value="Justus">
+                <label for="Justus">Justus Sturkenboom</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Koop" name="Koop" value="Koop">
+                <label for="Koop">Koop Reynders</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Peter" name="Peter" value="Peter">
+                <label for="Peter">Peter Paul Koch</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Robert" name="Robert" value="Robert">
+                <label for="Robert">Robert Spier</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Sanne" name="Sanne" value="Sanne">
+                <label for="Sanne">Sanne t Hooft</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Suus" name="Suus" value="Suus">
+                <label for="Suus">Suus ten Voorde</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Vasilis" name="Vasilis" value="Vasilis">
+                <label for="Vasilis">Vasilis van Gemert</label>
+              </li>
+            </ul>
+
+            <p>In welke week had je dit vak?</p>
+            <input type="text" id="week" name="week" value="Week 10 t/m week 13">
+            <p>Hoe moeilijk vond je de lesstof van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe moeilijk vond je de uitleg van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+          </fieldset>
+
+          <div>
+            <a href="#bt">Vorige</a>
+            <a href="#hcd">Volgende</a>
+          </div>
+        </form>
+
+      <form id="hcd">
+          <fieldset>
+            <legend>Human Centred Design</legend>
+            <p>Welke docenten had je voor dit vak?</p>
+            <ul>
+              <li>
+                <input type="checkbox" id="Declan" name="Declan" value="Declan">
+                <label for="Declan">Declan Rek</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Guido" name="Guido" value="Guido">
+                <label for="Guido">Guido Bouwman</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Janno" name="Janno" value="Janno">
+                <label for="Janno">Janno Kapritsias</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Joost" name="Joost" value="Joost">
+                <label for="Joost">Joost Faber</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Justus" name="Justus" value="Justus">
+                <label for="Justus">Justus Sturkenboom</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Koop" name="Koop" value="Koop">
+                <label for="Koop">Koop Reynders</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Peter" name="Peter" value="Peter">
+                <label for="Peter">Peter Paul Koch</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Robert" name="Robert" value="Robert">
+                <label for="Robert">Robert Spier</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Sanne" name="Sanne" value="Sanne">
+                <label for="Sanne">Sanne t Hooft</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Suus" name="Suus" value="Suus">
+                <label for="Suus">Suus ten Voorde</label>
+              </li>
+              <li> 
+                <input type="checkbox" id="Vasilis" name="Vasilis" value="Vasilis">
+                <label for="Vasilis">Vasilis van Gemert</label>
+              </li>
+            </ul>
+
+            <p>In welke week had je dit vak?</p>
+            <input type="text" id="week" name="week" value="Week 10 t/m week 13">
+            <p>Hoe moeilijk vond je de lesstof van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe moeilijk vond je de uitleg van dit vak? (1 = makkelijk 10 = moeilijk)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+            <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
+            <label for="cijfer">Cijfer</label>
+            <input type="number" id="cijfer" name="cijfer">
+          </fieldset>
+          <div>
+            <a href="#rtw">Vorige</a>
+          </div>
+
+  <input type="submit" value="Submit">
+</form>
+    </main>  
+
+  <script src="./scripts/js.js"></script>
+</body>
+
+</html>
