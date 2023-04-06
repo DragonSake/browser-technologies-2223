@@ -33,7 +33,7 @@ git clone https://https://github.com/DragonSake/progressive-web-apps-2223.git
 
 ### Activity diagram
 
-![AD](https://user-images.githubusercontent.com/40611000/230349445-15f55e16-54a7-4104-bf1d-51fbf623d1a7.png)
+![AD](https://user-images.githubusercontent.com/40611000/230352526-390f5442-32bd-4f8c-a74c-f4dd14e0d7b4.jpg)
 
 ***
 
