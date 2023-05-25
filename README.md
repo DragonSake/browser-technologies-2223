@@ -13,10 +13,7 @@ For Browser Technologies we had to research functionality, accessibility and (br
 # Table of content
 * Chosen user story
 * Moodboard
-* Email validation
-* Dark mode
-* CSS form on next page
-* Javascript cache
+* Features
 * Browser test
 
 ## Chosen user story
@@ -50,7 +47,9 @@ Requirements for the survey:
 
 *** 
 
-## Email validation
+## Features
+
+### Email validation
 
 To fill in a studentnumber that starts with 500 and has a total of 9 numbers.
 
@@ -86,7 +85,7 @@ input[type=text]:placeholder-shown:invalid {
 
 ***
 
-## Dark mode
+### Dark mode
 
 ```CSS
 @media (prefers-color-scheme: dark) {
@@ -136,7 +135,7 @@ input[type=text]:placeholder-shown:invalid {
 
 ***
 
-## CSS form on next page
+### CSS form on next page
 
 ```CSS
 form{
@@ -187,7 +186,7 @@ form#hcd:target{
 
 ***
 
-## Javascript cache
+### Javascript cache
 
 If you are filling in the form, I used Javascript to save your progress in the local storage.
 
