@@ -1,7 +1,6 @@
 const allForms = document.querySelectorAll('form');
 const maxForms = 7;
 
-
 // Save in local storage
 if (window.localStorage) {
 
