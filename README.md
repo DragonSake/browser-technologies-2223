@@ -13,8 +13,13 @@ For Browser Technologies we had to research functionality, accessibility and (br
 # Table of content
 * Chosen user story
 * Moodboard
+* Progressive enhancement
 * Features
 * Browser test
+* Feedback
+* Conclusion
+* Sources
+* License
 
 ## Chosen user story
 
@@ -46,6 +51,14 @@ Requirements for the survey:
 ![Enquête moodboard](https://user-images.githubusercontent.com/40611000/230055295-310f823e-2971-4463-b48d-14314038b7a9.png)
 
 *** 
+
+## Progressive enhancement 
+
+Progressive Enhancement means focusing on the main content of a web page first. Everyone can access the web page's basic content and features with any browser and even with a slow internet connection. Then, if the user's browser and internet connection allows, additional layers of style and features are added.
+
+The first layer of my survey is the HTML, this contains text. The second layer is CSS, this gives a nice visual representation of my survey's content. The third layer is Javascript, users can still fill in the survey without Javascript. This is just an enhanced usability.
+
+***
 
 ## Features
 
@@ -350,7 +363,7 @@ I'm going to test the survey on different browsers and mobiles. The browsers I'm
 
 ***
 
-## Mobile testing
+### Mobile testing
 
 ### iOS light mode
 
@@ -415,7 +428,7 @@ I'm going to test the survey on different browsers and mobiles. The browsers I'm
 
 ***
 
-## Mobile button fix
+### Mobile button fix
 
 ```CSS
 div{
@@ -441,7 +454,7 @@ div a{
 
 ***
 
-## CSS disabled
+### CSS disabled
 
 If the CSS is disabled, you'll see the whole form on one page instead of parts of the form.
 
@@ -449,10 +462,190 @@ If the CSS is disabled, you'll see the whole form on one page instead of parts o
 
 ***
 
-## Javascript disabled
+### Javascript disabled
 
 If the Javascript is enabled, every answer you filled in will be saved in the local storage.
 If the Javascript is disabled, then the form won't be saved. Everything you filled in will be deleted when you close the tabblad and then you can't continue to fill in the form where you left off.
 
 ***
 
+## Feedback
+* Write readme
+* Grades that the user gives to subjects must be larger
+* Each page of the form must be in a fieldset instead of a form
+
+***
+
+### Grades that the user gives to subjects must be larger
+
+The grades that the user gives to the subjects were too small to read so I made it bigger by adding .5em to the font-size.
+
+### Before
+```CSS
+input[type=number]{
+    font-size: 1em;
+}
+```
+
+<img src="https://github.com/DragonSake/browser-technologies-2223/assets/40611000/7ae79f75-9e77-4254-8e44-a1059f4dc64d" width="500" />
+
+<img src="https://github.com/DragonSake/browser-technologies-2223/assets/40611000/38020cbd-fb76-4e66-bbf4-38b9ac717ab0" width="500" />
+
+### After
+
+```CSS
+input[type=number]{
+    font-size: 1.5em;
+}
+```
+
+<img src="https://github.com/DragonSake/browser-technologies-2223/assets/40611000/ff3861ff-5915-443b-b50a-1c07b88da9a7" width="500" />
+
+<img src="https://github.com/DragonSake/browser-technologies-2223/assets/40611000/31aad4d4-a04b-451c-8b9a-c571d89fdf3d" width="500" />
+
+***
+
+### Each page of the form must be in a fieldset instead of a form
+
+My survey contains multiple forms which is not my intention. I want to make one form that contains multiple fieldsets.
+
+### Before
+```HTML
+<form id="wafs">
+</form>
+
+<form id="cssttr">
+</form>
+
+<form id="pwa">
+</form>
+
+<form id="bt">
+</form>
+
+<form id="rtw">
+</form>
+
+<form id="hcd">
+</form>
+```
+
+```CSS
+form#personal:target {
+    display: block;
+}
+
+form#wafs:target{
+    display: block;
+}
+
+form#cssttr:target{
+    display: block;
+}
+
+form#pwa:target{
+    display: block;
+}
+form#bt:target{
+    display: block;
+}
+
+form#rtw:target{
+    display: block;
+}
+
+form#hcd:target{
+    display: block;
+}
+```
+
+### After
+
+```HTML
+<fieldset id="wafs">
+</fieldset>
+
+<fieldset id="cssttr">
+</fieldset>
+
+<fieldset id="pwa">
+</fieldset>
+
+<fieldset id="bt">
+</fieldset>
+
+<fieldset id="rtw">
+</fieldset>
+
+<fieldset id="hcd">
+</fieldset>
+```
+
+```CSS
+#personal:invalid a{
+    background-color: grey;
+    pointer-events: none;
+    opacity: 30%;
+}
+
+fieldset:first-of-type{
+    margin-top: 5em;
+}
+
+fieldset{
+    margin: 5em;
+    border: none;
+    display: none;
+}
+
+fieldset#personal:target {
+    display: block;
+}
+
+fieldset#wafs:target{
+    display: block;
+}
+
+fieldset#cssttr:target{
+    display: block;
+}
+
+fieldset#pwa:target{
+    display: block;
+}
+fieldset#bt:target{
+    display: block;
+}
+
+fieldset#rtw:target{
+    display: block;
+}
+
+fieldset#hcd:target{
+    display: block;
+}
+```
+
+```JS
+const allForms = document.querySelectorAll('fieldset');
+```
+***
+
+## Conclusion
+
+I found it very interesting to test on different browsers and mobiles to see if they don't support some code. For my survey I haven't really been able to find anything that doesn't work in a browser. Only that UC browser has no dark mode.
+
+***
+
+## Sources
+* https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/
+* https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/
+* https://www.w3schools.com/html/html_forms.asp
+* https://html5-tutorial.net/form-validation/validating-email/
+* https://web.dev/color-scheme/
+* https://stackoverflow.com/questions/72922557/light-dark-mode-in-html-without-css-only-html
+
+***
+
+## License
+MIT License
