@@ -19,7 +19,7 @@ For Browser Technologies we had to research functionality, accessibility and (br
 * Javascript cache
 * Browser test
 
-### Chosen user story
+## Chosen user story
 
 Survey about the minor Web Design and Development
 
