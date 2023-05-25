@@ -1,4 +1,4 @@
-const allForms = document.querySelectorAll('form');
+const allForms = document.querySelectorAll('fieldset');
 const maxForms = 7;
 
 // Save in local storage

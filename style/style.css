@@ -21,49 +21,46 @@ main {
     padding-top: 1em;
 }
 
-form{
-    display: none;
-}
-
 #personal:invalid a{
     background-color: grey;
     pointer-events: none;
     opacity: 30%;
 }
 
-form:first-of-type{
+fieldset:first-of-type{
     margin-top: 5em;
 }
 
 fieldset{
     margin: 5em;
     border: none;
+    display: none;
 }
 
-form#personal:target {
+fieldset#personal:target {
     display: block;
 }
 
-form#wafs:target{
+fieldset#wafs:target{
     display: block;
 }
 
-form#cssttr:target{
+fieldset#cssttr:target{
     display: block;
 }
 
-form#pwa:target{
+fieldset#pwa:target{
     display: block;
 }
-form#bt:target{
-    display: block;
-}
-
-form#rtw:target{
+fieldset#bt:target{
     display: block;
 }
 
-form#hcd:target{
+fieldset#rtw:target{
+    display: block;
+}
+
+fieldset#hcd:target{
     display: block;
 }
 
@@ -216,9 +213,17 @@ a:hover{
 }
 
 div{
-    display: block;
-    margin: 0 auto 3em auto;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div ul{
+    display: grid;
+}
+
+div ul li{
+    margin: 3em auto;
 }
 
 div a{

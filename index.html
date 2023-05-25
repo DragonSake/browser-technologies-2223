@@ -11,9 +11,9 @@
 
 <body>
     <main>
-      <form id="personal">
+      <form>
         <h1>Enquête Minor Web Design & Development</h1>
-          <fieldset>
+          <fieldset id="personal">
             <legend>Personal information</legend>
             <h2>Step 1/7</h2>
             <ul>
@@ -30,15 +30,13 @@
                 <input type="email" id="email" name="email" placeholder="Email*" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
               </li>
             </ul>
+
+            <div>
+              <a href="#wafs">Volgende</a>
+            </div>
           </fieldset>
 
-          <div>
-            <a href="#wafs">Volgende</a>
-          </div>
-        </form>
-
-          <form id="wafs">
-          <fieldset>
+          <fieldset id="wafs">
             <legend>Web App from Scratch</legend>
             <h2>Step 2/7</h2>
             <p>Welke docenten had je voor dit vak?</p>
@@ -100,16 +98,16 @@
             <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
             <label for="cijfer">Cijfer</label>
             <input type="number" id="cijfer" name="cijfer">
+
+            <div>
+              <ul>
+                <li><a href="#personal">Vorige</a></li> 
+                <li><a href="#cssttr">Volgende</a></li> 
+              </ul>
+            </div>
           </fieldset>
 
-          <div>
-            <a href="#personal">Vorige</a>
-            <a href="#cssttr">Volgende</a>
-          </div>
-        </form>
-
-        <form id="cssttr">
-          <fieldset>
+          <fieldset id="cssttr">
             <legend>CSS to the Rescue</legend>
             <h2>Step 3/7</h2>
             <p>Welke docenten had je voor dit vak?</p>
@@ -171,16 +169,16 @@
             <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
             <label for="cijfer">Cijfer</label>
             <input type="number" id="cijfer" name="cijfer">
+
+            <div>
+              <ul>
+                <li><a href="#wafs">Vorige</a></li> 
+                <li><a href="#pwa">Volgende</a></li> 
+              </ul>
+            </div>
           </fieldset>
 
-          <div>
-            <a href="#wafs">Vorige</a>
-            <a href="#pwa">Volgende</a>
-          </div>
-        </form>
-
-        <form id="pwa">
-          <fieldset>
+          <fieldset id="pwa">
             <legend>Progressive Web Apps</legend>
             <h2>Step 4/7</h2>
             <p>Welke docenten had je voor dit vak?</p>
@@ -242,15 +240,16 @@
             <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
             <label for="cijfer">Cijfer</label>
             <input type="number" id="cijfer" name="cijfer">
-          </fieldset>
-          <div>
-            <a href="#cssttr">Vorige</a>
-            <a href="#bt">Volgende</a>
-          </div>
-        </form>
 
-      <form id="bt">
-          <fieldset>
+            <div>
+              <ul>
+                <li><a href="#cssttr">Vorige</a></li> 
+                <li><a href="#bt">Volgende</a></li> 
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset id="bt">
             <legend>Browser Technologies</legend>
             <h2>Step 5/7</h2>
             <p>Welke docenten had je voor dit vak?</p>
@@ -312,15 +311,16 @@
             <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
             <label for="cijfer">Cijfer</label>
             <input type="number" id="cijfer" name="cijfer">
-          </fieldset>
-          <div>
-            <a href="#pwa">Vorige</a>
-            <a href="#rtw">Volgende</a>
-          </div>
-        </form>
 
-      <form id="rtw">
-          <fieldset>
+            <div>
+              <ul>
+                <li><a href="#pwa">Vorige</a></li> 
+                <li><a href="#rtw">Volgende</a></li> 
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset id="rtw">
             <legend>Real-time Web</legend>
             <h2>Step 6/7</h2>
             <p>Welke docenten had je voor dit vak?</p>
@@ -382,16 +382,16 @@
             <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
             <label for="cijfer">Cijfer</label>
             <input type="number" id="cijfer" name="cijfer">
+
+            <div>
+              <ul>
+                <li><a href="#bt">Vorige</a></li> 
+                <li><a href="#hcd">Volgende</a></li> 
+              </ul>
+            </div>
           </fieldset>
 
-          <div>
-            <a href="#bt">Vorige</a>
-            <a href="#hcd">Volgende</a>
-          </div>
-        </form>
-
-      <form id="hcd" action="/submitted.html">
-          <fieldset>
+          <fieldset id="hcd">
             <legend>Human Centred Design</legend>
             <h2>Step 7/7</h2>
             <p>Welke docenten had je voor dit vak?</p>
@@ -453,12 +453,13 @@
             <p>Hoe goed snap je dit vak? (1 = slecht 10 = goed)</p>
             <label for="cijfer">Cijfer</label>
             <input type="number" id="cijfer" name="cijfer">
-          </fieldset>
-          <div>
-            <a href="#rtw">Vorige</a>
-          </div>
 
-  <input type="submit" value="Submit" action="/submitted.html">
+            <div>
+              <a href="#rtw">Vorige</a>
+            </div>
+
+            <input type="submit" value="Submit" action="/submitted.html">
+          </fieldset>
 </form>
     </main>  
 
