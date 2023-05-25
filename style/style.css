@@ -221,6 +221,10 @@ div{
     width: fit-content;
 }
 
+div a{
+    margin: 0 auto 1em auto;
+}
+
 input[type=submit]{
     background-color: rgb(0,133,255);
     border: none;
