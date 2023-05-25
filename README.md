@@ -10,7 +10,7 @@ For Browser Technologies we had to research functionality, accessibility and (br
 
 ***
 
-## Table of content
+# Table of content
 * Chosen user story
 * Moodboard
 * Email validation
